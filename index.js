@@ -169,4 +169,5 @@ accessory.publish({
   category: hap.Categories.LIGHTBULB
 });
 
-if (showLogging) { console.log("Accessory setup finished!"); }
+console.log("Running!");
+console.log("Device Pin Code: 000-00-123");
