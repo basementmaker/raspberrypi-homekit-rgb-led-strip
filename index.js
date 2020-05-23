@@ -78,9 +78,11 @@ const changeColor = function () {
     if (showLogging) { console.log("Green: "+g); }
     if (showLogging) { console.log("Blue: "+b); }
 
-    redLED.pwmWrite(r);
-    greenLED.pwmWrite(g);
-    blueLED.pwmWrite(b);
+    if ( LEDstripStatusIsOn ) {
+      redLED.pwmWrite(r);
+      greenLED.pwmWrite(g);
+      blueLED.pwmWrite(b);
+    }
 
     brightnessChanged = false;
     hueChanged = false;
@@ -95,6 +97,7 @@ onCharacteristic.on(CharacteristicEventTypes.GET, callback => {
 
 onCharacteristic.on(CharacteristicEventTypes.SET, (value, callback) => {
   if (showLogging) { console.log("Setting RGB LED Strip On: " + value); }
+  if (showLogging) { console.log("LEDstripStatusIsOn: " + LEDstripStatusIsOn); }
   if ( value == true && LEDstripStatusIsOn == false) {
     if ( currentLEDbrightness == 0 ) {
       currentLEDbrightness = 100;
