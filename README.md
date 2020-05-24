@@ -1,9 +1,17 @@
 # Raspberry Pi - Homekit RGB LED Strip
 
 ## About
-This repo pairs with my video on using the Raspberry Pi to control a RGB LED trip with Homekit.
+This repo pairs with my video on using the Raspberry Pi to control a 12v RGB LED strip with Homekit.
 
----
+## YouTube Video for this Project
+Coming soon ...
+
+## Circuit Diagram
+![Circuit Diagram](docs/circuit_diagram.png)
+
+## Previous Video in This Series
+
+[![Raspberry Pi Controlling RGB LED Strip Lights (12v) (Updated)](https://img.youtube.com/vi/96uqxLQ_VFo/0.jpg)](https://www.youtube.com/watch?v=96uqxLQ_VFo)
 
 ## How to install
 
@@ -11,6 +19,12 @@ This repo pairs with my video on using the Raspberry Pi to control a RGB LED tri
 
 ```console
 wget https://raw.githubusercontent.com/basementmaker/raspberrypi-configurator/master/pi-config.sh
+chmod +x pi-config.sh
+./pi-config.sh
+```
+or use the shorter URL version:
+```console
+wget https://basementmaker.net/pi-config.sh
 chmod +x pi-config.sh
 ./pi-config.sh
 ```
