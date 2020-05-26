@@ -4,7 +4,7 @@
 This repo pairs with my video on using the Raspberry Pi to control a 12v RGB LED strip with Homekit.
 
 ## YouTube Video for this Project
-Coming soon ...
+[![Raspberry Pi Controlling RGB LED Strip Lights (12v) (Updated)](https://img.youtube.com/vi/xmju9YQgxcM/0.jpg)](https://www.youtube.com/watch?v=xmju9YQgxcM)
 
 ## Circuit Diagram
 ![Circuit Diagram](docs/circuit_diagram.png)
